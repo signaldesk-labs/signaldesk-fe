@@ -5,15 +5,16 @@ import { useDashboard } from "./hooks";
 
 const fallback = {
   metrics: [
-    { key: "event_p95_ms", label: "event p95 ms", value: 184, unit: "ms", target: 220 },
-    { key: "chart_render_ms", label: "chart render ms", value: 92, unit: "%", target: 90 },
-    { key: "legacy_api_match_rate", label: "legacy api match rate", value: 37, unit: "events", target: 30 },
+    { key: "open_incidents", label: "open incidents", value: 24, unit: "cases", target: 30 },
+    { key: "triage_p95_ms", label: "triage p95", value: 168, unit: "ms", target: 220 },
+    { key: "legacy_sync_rate", label: "legacy sync", value: 98, unit: "%", target: 95 }
   ],
   events: [
-    { id: "evt-1", title: "event triage", status: "requested", severity: "high", updatedAt: "2026-07-08" },
-    { id: "evt-2", title: "saved filters", status: "approved", severity: "medium", updatedAt: "2026-07-08" },
+    { id: "sec-1042", title: "Suspicious login burst", status: "triaging", severity: "high", updatedAt: "2026-07-08" },
+    { id: "sec-1037", title: "Payment webhook anomaly", status: "assigned", severity: "medium", updatedAt: "2026-07-08" },
+    { id: "sec-1028", title: "Legacy report sync check", status: "resolved", severity: "low", updatedAt: "2026-07-07" }
   ],
-  trend: [{ day: "Mon", value: 12 }, { day: "Tue", value: 18 }, { day: "Wed", value: 33 }, { day: "Thu", value: 27 }, { day: "Fri", value: 41 }],
+  trend: [{ day: "Mon", value: 31 }, { day: "Tue", value: 26 }, { day: "Wed", value: 39 }, { day: "Thu", value: 22 }, { day: "Fri", value: 18 }],
 } as const;
 
 export const Dashboard = () => {
