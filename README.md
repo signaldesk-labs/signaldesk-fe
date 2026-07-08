@@ -1,5 +1,10 @@
 # SignalDesk FE
 
+![React](https://img.shields.io/badge/React-18-61dafb?logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-3178c6?logo=typescript)
+![Vite](https://img.shields.io/badge/Vite-8-646cff?logo=vite)
+![ky](https://img.shields.io/badge/API-ky-111827)
+
 보안 이벤트 운영 화면입니다. 이벤트 상태, 처리 우선순위, 레거시 리포트 동기화 상태를 React 대시보드에서 확인합니다.
 
 ## 기능
